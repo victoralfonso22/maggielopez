@@ -1435,6 +1435,24 @@
 				border-top: solid 2px #E5E5E5;
 			}
 
+/* Img */
+
+.redondeado {
+padding:15px; /* Espacio entre la imagen y el borde */
+background:#FFF; /* Color de fondo que se ve entre el espacio */
+-moz-transition: all 1s;
+-webkit-transition: all 1s;
+-o-transition: all 1s;
+}
+.redondeado:hover {
+border-radius: 0% 50%; /* Borde redondeado */
+box-shadow: 0px 0px 15px #Ff0033; /* Sombra */
+-moz-transition: all 1s;
+-webkit-transition: all 1s;
+-o-transition: all 1s;
+cursor:pointer;
+}
+                        
 /* Button */
 
 	input[type="button"],
