@@ -1089,13 +1089,13 @@
 	input, textarea, select {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		color: #777;
+		color: black;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 600;
 		text-transform: uppercase;
-		color: #888;
+		color: black;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1195,7 +1195,7 @@
 		-webkit-transition: opacity 0.25s ease-in-out;
 		-ms-transition: opacity 0.25s ease-in-out;
 		transition: opacity 0.25s ease-in-out;
-		display: inline-block;
+		display: inherit;
 		border: solid 6px #ebebeb !important;
 	}
 
@@ -1221,7 +1221,7 @@
 
 		.image.left {
 			float: left;
-			margin: 0 1.5em 1.5em 0;
+			margin: 0 1.2em 1.2em 0;
 			position: relative;
 			top: 0.5em;
 		}
@@ -1245,7 +1245,7 @@
 
 		ul.default li {
 			padding-left: 0.5em;
-			margin: 0.75em 0 0.75em 0;
+			margin: 0 0 0 0;
 		}
 
 			ul.default li:first-child {
@@ -1286,7 +1286,7 @@
 
 	ul.icons > li {
 		position: relative;
-		padding: 2em 0 0 3em;
+		padding: 0 0 0 0;
 	}
 
 		ul.icons > li:before {
@@ -1295,7 +1295,7 @@
 			top: 2em;
 			display: block;
 			background: #878787;
-			color: #e4e4e4;
+			color: black;
 			width: 1.65em;
 			height: 1.65em;
 			border-radius: 1.65em;
@@ -1331,7 +1331,7 @@
 	form label {
 		font-weight: 600;
 		text-transform: uppercase;
-		color: #888;
+		color: black;
 		display: block;
 		margin: 0 0 1em 0;
 	}
@@ -1438,7 +1438,7 @@
 /* Img */
 
 .redondeado {
-padding:15px; /* Espacio entre la imagen y el borde */
+padding:10px; /* Espacio entre la imagen y el borde */
 background:#FFF; /* Color de fondo que se ve entre el espacio */
 -moz-transition: all 1s;
 -webkit-transition: all 1s;
@@ -1590,7 +1590,7 @@ cursor:pointer;
 	}
 
 		#banner-wrapper .inner {
-			background: url("../../images/banner.jpg");
+			background: url("../../imagenes/banner.jpg");
 			background-size: cover;
 		}
 
@@ -1622,8 +1622,9 @@ cursor:pointer;
 	#footer-wrapper {
 		position: relative;
 		overflow: hidden;
-		border-top: solid 2px #e5e5e5;
+		border-top: solid 2px #FE1B48;
 		background: #f0f0f0;
+                
 	}
 
 		#footer-wrapper form input[type="text"],
@@ -1650,8 +1651,8 @@ cursor:pointer;
 
 	#header {
 		position: relative;
-		border-bottom: solid 2px #e5e5e5;
-		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
+		border-bottom: solid 2px #FE1B48;
+		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #000;
 	}
 
 		#header h1 {
@@ -1668,8 +1669,12 @@ cursor:pointer;
 		#header p {
 			text-transform: uppercase;
 			font-weight: 400;
-			color: #888;
+			color: black;
 		}
+                
+                #header a{
+                        top: 10em;
+                }
 
 /* Nav */
 
@@ -1681,22 +1686,22 @@ cursor:pointer;
 			border: 0;
 			text-decoration: none;
 			text-transform: uppercase;
-			font-weight: 400;
-			color: #FA7A6C;
+			font-weight: 380;
+			color: black;
 			outline: 0;
 		}
 
 			#nav > ul > li > a:before {
 				display: inline-block;
-				background: #e4e4e4;
-				color: #FA7A6C;
+				background: black;
+				color: #FE1B48;
 				width: 1.65em;
 				height: 1.65em;
 				border-radius: 1.65em;
 				line-height: 1.65em;
 				text-align: center;
 				box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
-				margin-right: 0.75em;
+				margin-right: 0.3em;
 				-moz-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
 				-webkit-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
 				-o-transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
@@ -1713,12 +1718,12 @@ cursor:pointer;
 			}
 
 		#nav > ul > li.active > a:before, #nav > ul > li:hover > a:before {
-			background: black;
-			color: #fff;
+			background: #e4e4e4;
+			color: #FE1B48;
 		}
 
 		#nav > ul > li.active > a > span, #nav > ul > li:hover > a > span {
-			color: black;
+			color: #FE1B48;
 		}
 
 /* Features */
@@ -1829,8 +1834,8 @@ cursor:pointer;
 				}
 
 			ul.divided li {
-				margin: 2.5em 0 0 0;
-				padding: 2.5em 0 0 0;
+				margin: 2em 0 0 0;
+				padding: 2em 0 0 0;
 			}
 
 		/* Box */
@@ -1868,7 +1873,7 @@ cursor:pointer;
 		/* Header */
 
 			#header {
-				padding: 14em 0 7em 0;
+				padding: 4em 0 7em 0;
 			}
 
 				#header h1 {
@@ -1886,14 +1891,16 @@ cursor:pointer;
 
 			#nav {
 				position: absolute;
-				top: 3em;
-				left: 0;
+				top: 10em;				
 				width: 100%;
+                                
 			}
 
 				#nav > ul > li {
-					display: inline-block;
-					padding-right: 2em;
+                                        display: inline-block;
+                                        
+					padding-right: 1.5em;
+                                    
 				}
 
 					#nav > ul > li:last-child {
@@ -2291,7 +2298,7 @@ cursor:pointer;
 						text-align: center;
 						line-height: 40px;
 						font-size: 18px;
-						color: #aaa;
+						color: black;
 					}
 
 					#titleBar .toggle:active:before {
@@ -2507,5 +2514,6 @@ cursor:pointer;
 				margin-top: 2em;
 				padding-top: 2em;
 			}
-
-	}
+                        
+  
+        }
