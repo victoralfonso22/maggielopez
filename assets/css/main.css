@@ -28,6 +28,7 @@
 
 	ol, ul {
 		list-style: none;
+                margin-left: 115px;
 	}
 
 	blockquote, q {
@@ -1072,7 +1073,7 @@
 		background: #f0f0f0;
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		color: #777;
+		color: black;
 	}
 
 		body.is-loading * {
@@ -1109,7 +1110,8 @@
 		-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-		color: #666;
+		/* color de los link de contacto*/
+                color: green;
 		text-decoration: none;
 		border-bottom: solid 1px #ddd;
 	}
@@ -1122,17 +1124,17 @@
 		}
 
 		a:hover {
-			color: #ed786a;
+			color: #FE1B48;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
 			a:hover strong {
-				color: #ed786a;
+				color: #FE1B48;
 			}
 
 	strong, b {
 		font-weight: 600;
-		color: #666;
+		color: #FE1B48;
 	}
 
 	em, i {
@@ -1422,7 +1424,7 @@
 			}
 
 			table.default thead {
-				background: #878787;
+				background: blue;
 				color: #fff;
 				font-weight: 400;
 				text-transform: uppercase;
@@ -1440,6 +1442,10 @@
 .redondeado {
 padding:10px; /* Espacio entre la imagen y el borde */
 background:#FFF; /* Color de fondo que se ve entre el espacio */
+height: 125px;
+width: 140px;
+
+
 -moz-transition: all 1s;
 -webkit-transition: all 1s;
 -o-transition: all 1s;
@@ -1467,7 +1473,7 @@ cursor:pointer;
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		background: #ed786a;
+		background: #FE1B48;
 		color: #fff !important;
 		text-transform: uppercase;
 		border-radius: 4px;
@@ -1503,7 +1509,7 @@ cursor:pointer;
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background: #ed786a;
+			background: #FE1B48;
 		}
 
 		input[type="button"].alt,
@@ -1653,6 +1659,7 @@ cursor:pointer;
 		position: relative;
 		border-bottom: solid 2px #FE1B48;
 		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #000;
+                height: 480px;
 	}
 
 		#header h1 {
@@ -1673,22 +1680,48 @@ cursor:pointer;
 		}
                 
                 #header a{
-                        top: 10em;
+                        top: -3em;
                 }
+                
+                #header image{
+                        margin: auto;
+                        width: 30%;
+                }
+
+      /*menu fijo*/          
+#top {
+	background-color: #FFF;
+	box-shadow: 0px 2px 2px #FE1B48;
+	height: 125px;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 1000;
+	font-family: Century Gothic, sans-serif;
+}                
+#img{
+    
+    width: 20%;
+    
+}
+
 
 /* Nav */
 
 	#nav {
-		cursor: default;
+		cursor: default;                
+                
 	}
 
 		#nav > ul > li > a {
 			border: 0;
 			text-decoration: none;
 			text-transform: uppercase;
-			font-weight: 380;
+			font-weight: 300;
 			color: black;
 			outline: 0;
+                        
 		}
 
 			#nav > ul > li > a:before {
@@ -1718,7 +1751,7 @@ cursor:pointer;
 			}
 
 		#nav > ul > li.active > a:before, #nav > ul > li:hover > a:before {
-			background: #e4e4e4;
+			background: #fff;
 			color: #FE1B48;
 		}
 
@@ -1891,7 +1924,7 @@ cursor:pointer;
 
 			#nav {
 				position: absolute;
-				top: 10em;				
+				top: 0;				
 				width: 100%;
                                 
 			}
@@ -1978,7 +2011,7 @@ cursor:pointer;
 					-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 					-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 					transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-					color: #ed786a;
+					color: #FE1B48;
 				}
 
 		/* Banner */
@@ -2111,7 +2144,7 @@ cursor:pointer;
 		/* Header */
 
 			#header {
-				padding: 9em 0 4em 0;
+				padding: 4em 0 4em 0;
 			}
 
 				#header h1 {
@@ -2304,7 +2337,7 @@ cursor:pointer;
 					#titleBar .toggle:active:before {
 						opacity: 0.5;
 					}
-
+/*menu movil*/
 			#navPanel {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
@@ -2326,18 +2359,18 @@ cursor:pointer;
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #444;
+				background: #fff;
 				border-right: solid 2px #3c3c3c;
 				font-weight: 400;
 				text-transform: uppercase;
-				color: #888;
+				color: #FE1B48;
 				letter-spacing: 2px;
 				font-size: 0.85em;
 			}
 
 				#navPanel .link {
 					display: block;
-					color: #ddd;
+					color: green;
 					text-decoration: none;
 					height: 44px;
 					line-height: 44px;
@@ -2352,7 +2385,7 @@ cursor:pointer;
 
 					#navPanel .link.depth-0 {
 						font-weight: 600;
-						color: #fff;
+						color: #FE1B48;
 					}
 
 				#navPanel .indent-1 {
