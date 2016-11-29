@@ -1437,13 +1437,23 @@
 				border-top: solid 2px #E5E5E5;
 			}
 
+#imagenMobil
+{    
+    display: none;
+	width: 105px;
+	height: 95px;
+}
+                        
+                        
 /* Img */
 
 .redondeado {
 padding:10px; /* Espacio entre la imagen y el borde */
-background:#FFF; /* Color de fondo que se ve entre el espacio */
-height: 90px;
-width: 105px;
+background: transparent; /* Color de fondo que se ve entre el espacio */
+height: 101px;
+width: 116px;
+
+
 
 
 -moz-transition: all 1s;
@@ -1708,6 +1718,10 @@ cursor:pointer;
 
 .logo {
     float: left;
+    padding:10px; /* Espacio entre la imagen y el borde */
+background:#FFF; /* Color de fondo que se ve entre el espacio */
+height: 90px;
+width: 105px;
 }
 
 #img{
@@ -2025,7 +2039,7 @@ cursor:pointer;
 					transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 					color: #FE1B48;
 				}
-
+                                
 		/* Banner */
 
 			#banner {
@@ -2201,6 +2215,10 @@ cursor:pointer;
 			html, body {
 				overflow-x: hidden;
 			}
+                        
+                        #imagenMobil{
+                            display: inline-block;
+                        }
 
 			body, input, textarea, select {
 				line-height: 1.75em;
@@ -2367,7 +2385,7 @@ cursor:pointer;
 				height: 100%;
 				left: 0;
 				overflow-y: auto;
-				position: fixed;
+				position: fixed;                               
 				top: 0;
 				width: 275px;
 				z-index: 10002;
@@ -2379,7 +2397,7 @@ cursor:pointer;
 				letter-spacing: 2px;
 				font-size: 0.85em;
 			}
-
+                        
 				#navPanel .link {
 					display: block;
 					color: green;
@@ -2427,6 +2445,14 @@ cursor:pointer;
 
 				#navPanel .depth-0 {
 					color: #fff;
+				}
+                                
+                                #navPanel .icons {
+				margin: 0 0 2em 0 !important;
+                                }
+
+				#navPanel .icons:last-child {
+					margin-bottom: 0;
 				}
 
 			body.navPanel-visible #page-wrapper {
@@ -2561,5 +2587,5 @@ cursor:pointer;
 				padding-top: 2em;
 			}
                         
-  
+                        
         }
