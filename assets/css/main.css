@@ -1442,8 +1442,8 @@
 .redondeado {
 padding:10px; /* Espacio entre la imagen y el borde */
 background:#FFF; /* Color de fondo que se ve entre el espacio */
-height: 125px;
-width: 140px;
+height: 90px;
+width: 105px;
 
 
 -moz-transition: all 1s;
@@ -1692,7 +1692,7 @@ cursor:pointer;
 #top {
 	background-color: #FFF;
 	box-shadow: 0px 2px 2px #FE1B48;
-	height: 125px;
+	height: 100px;
 	left: 0px;
 	position: fixed;
 	top: 0px;
@@ -1700,6 +1700,16 @@ cursor:pointer;
 	z-index: 1000;
 	font-family: Century Gothic, sans-serif;
 }                
+#imgM{
+    
+    width: 100%;
+    
+}
+
+.logo {
+    float: left;
+}
+
 #img{
     
     width: 20%;
@@ -1712,7 +1722,9 @@ cursor:pointer;
 	#nav {
 		cursor: default;                
                 
-	}
+	}   
+        
+            
 
 		#nav > ul > li > a {
 			border: 0;
@@ -1729,7 +1741,7 @@ cursor:pointer;
 				background: black;
 				color: #FE1B48;
 				width: 1.65em;
-				height: 1.65em;
+				height: 1.5em;
 				border-radius: 1.65em;
 				line-height: 1.65em;
 				text-align: center;
@@ -2464,6 +2476,7 @@ cursor:pointer;
 
 			#header {
 				padding: 6em 0 4em 0;
+                                background-image: "../imagenes/logo_1_1.jpg";
 			}
 
 				#header h1 {
