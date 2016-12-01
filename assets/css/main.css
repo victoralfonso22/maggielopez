@@ -1403,7 +1403,34 @@
 
 	table {
 		width: 100%;
+                text-align: center;
+                margin: 0 auto;
+       text-align: center;
+       font-weight: bold;
 	}
+        
+        tr.spac td {
+				padding-bottom: 3em;
+                                text-align: center;
+                                padding:10px; /* Espacio entre la imagen y el borde */
+                                background: transparent; /* Color de fondo que se ve entre el espacio */
+                                height: 50px;
+                                width: 80px;
+                                -moz-transition: all 1s;
+-webkit-transition: all 1s;
+-o-transition: all 1s;
+			}
+                        
+        .spactd:hover {
+border-radius: 0% 15%; /* Borde redondeado */
+box-shadow: 0px 0px 3px #Ff0033; /* Sombra */
+-moz-transition: all 1s;
+-webkit-transition: all 1s;
+-o-transition: all 1s;
+cursor:pointer;
+color: #Ff0033;
+font-weight: bold;
+}
 
 		table.default {
 			width: 100%;
@@ -1420,6 +1447,8 @@
 			table.default td {
 				padding: 0.75em 1em 0.75em 1em;
 			}
+                        
+                        
 
 			table.default th {
 				text-align: left;
@@ -1637,12 +1666,15 @@ cursor:pointer;
 		position: relative;
 		overflow: hidden;
 		background: #fff;
+                height: 650px;
+                border-bottom: solid 2px #FE1B48;                 
+		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #000;                
 	}
 
 	#footer-wrapper {
 		position: relative;
 		overflow: hidden;
-		border-top: solid 2px #FE1B48;
+		/*border-top: solid 2px #FE1B48;*/
 		background: #f0f0f0;
                 
 	}
@@ -1808,6 +1840,11 @@ width: 105px;
 		}
 
 /* Content */
+#contentS{
+    width: 50%;
+    position: relative;
+    
+}
 #content{
     width: 100%;
     
@@ -1841,10 +1878,10 @@ width: 105px;
 /* Copyright */
 
 	#copyright {
-		border-top: solid 2px #e5e5e5;
+		border-top: solid 2px #FE1B48;
 		text-align: center;
 	}
-
+        
 /* Desktop */
 
 	@media screen and (min-width: 737px) {
