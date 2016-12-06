@@ -1206,7 +1206,7 @@
 		-ms-transition: opacity 0.25s ease-in-out;
 		transition: opacity 0.25s ease-in-out;
 		display: inherit;
-		border: solid 6px #ebebeb !important;
+		border: solid 6px #ebebeb !important;                
 	}
 
 		.image:hover {
@@ -1269,7 +1269,7 @@
 
 		ul.links li {
 			display: inline;
-			border-left: solid 1px #d0d0d0;
+			/*border-left: solid 1px #d0d0d0;*/
 			padding-left: 1em;
 			margin-left: 1em;
 		}
@@ -1732,6 +1732,7 @@ cursor:pointer;
 		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #000;
                 margin-top: 105px;
                 height: 650px;
+                width: 100%;
 	}
 
 		#header h1 {
@@ -2331,6 +2332,12 @@ width: 105px;
 			.image.featured {
 				margin: 0 0 2em 0;
 			}
+                        
+                        .image{
+                          max-height: 100%;
+                          max-width: 100%;  
+                        }
+                        
 
 		/* Button */
 
