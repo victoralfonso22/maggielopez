@@ -10,12 +10,12 @@
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-		margin: 0;
+		margin-top: 0 !important;
 		padding: 0;
 		border: 0;
 		font-size: 100%;
 		font: inherit;
-		vertical-align: baseline;
+		vertical-align: middle;                
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -426,7 +426,7 @@
 	@media screen and (min-width: 737px) {
 
 		.row > * {
-			padding: 50px 0 0 50px;
+			padding: 0 0 0 50px;
 		}
 
 		.row {
@@ -1215,7 +1215,7 @@
 
 		.image img {
 			display: block;
-			width: 100%;
+			max-width: 100%;
 		}
 
 		.image.fit {
@@ -1426,20 +1426,21 @@
 /* Table */
 
 	table {
-		width: 50%;
-                text-align: center;
-                margin: auto;       
+		width: 40%;
+                max-width: 100%;
+                text-align: left;
+                margin: 0 auto;
        font-size: 20px;
        
 	}
         
         tr.spac td {
-				padding-bottom: 3em;
-                                text-align: center;
-                                padding:10px; /* Espacio entre la imagen y el borde */
+				
+                                vertical-align: middle;
+                                padding: 10px; /* Espacio entre la imagen y el borde */
                                 background: transparent; /* Color de fondo que se ve entre el espacio */
-                                height: 50px;
-                                width: 80px;
+                                height: 50%;
+                                width: 50%;
                                 -moz-transition: all 1s;
 -webkit-transition: all 1s;
 -o-transition: all 1s;
@@ -1453,6 +1454,9 @@ box-shadow: 0px 0px 3px #Ff0033; /* Sombra */
 -o-transition: all 1s;
 cursor:pointer;
 color: #Ff0033;
+text-align: center;
+vertical-align: middle;
+/*background-image: url('../../imagenes/seca.png') ;*/
 
 }
 
@@ -1499,6 +1503,10 @@ color: #Ff0033;
     display: none;
 	width: 105px;
 	height: 95px;
+}
+
+#topMobil{
+    display: none;
 }
                         
                         
@@ -1646,6 +1654,7 @@ cursor:pointer;
 		position: relative;
 		background: #fff;
 		text-align: center;
+                vertical-align: middle;
 	}
 
 		#header-wrapper p {
@@ -1729,10 +1738,9 @@ cursor:pointer;
 	#header {
 		position: relative;
 		border-bottom: solid 2px #FE1B48;
-		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #000;
-                margin-top: 105px;
-                height: 650px;
-                width: 100%;
+		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #000;                
+                height: 700px;
+                width: 100%;                
 	}
 
 		#header h1 {
@@ -1753,12 +1761,12 @@ cursor:pointer;
 		}
                 
                 #header a{
-                        top: -3em;
+                        top: -4em;
                 }
                 
                 #header image{
                         margin: auto;
-                        width: 30%;
+                        max-width: 100%;
                 }
 
       /*menu fijo #F6CED8*/          
@@ -1768,7 +1776,7 @@ cursor:pointer;
 	height: 100px;
 	left: 0px;
 	position: fixed;
-	top: 0px;
+	top: 0;
 	width: 100%;
 	z-index: 1000;
 	font-family: Century Gothic, sans-serif;
@@ -1809,7 +1817,7 @@ width: 105px;
 			text-transform: uppercase;
 			font-weight: 300;
 			color: black;
-			outline: 0;
+			outline: 0;                        
                         
 		}
 
@@ -2185,6 +2193,10 @@ width: 105px;
 				margin-top: 6em;
 				padding-top: 4em;
 			}
+                        
+                        img{
+                            max-width: 100%;
+                        }
 
 	}
 
@@ -2274,6 +2286,10 @@ width: 105px;
 				margin-top: 5em;
 				padding-top: 2em;
 			}
+                        
+                        img{
+                            max-width: 100%;
+                        }
 
 	}
 
@@ -2292,6 +2308,10 @@ width: 105px;
 			}
                         
                         #imagenMobil{
+                            display: inline-block;
+                        }
+                        
+                        #topMobil{
                             display: inline-block;
                         }
 
@@ -2326,7 +2346,7 @@ width: 105px;
 		/* Image */
 
 			.image.left {
-				width: 40%;
+				width: 100%;
 			}
 
 			.image.featured {
@@ -2336,6 +2356,11 @@ width: 105px;
                         .image{
                           max-height: 100%;
                           max-width: 100%;  
+                        }
+                        
+                        img{
+                            max-width: 100%;
+                            height: auto;
                         }
                         
 
@@ -2466,7 +2491,7 @@ width: 105px;
 				height: 100%;
 				left: 0;
 				overflow-y: auto;
-				position: fixed;                               
+				position: absolute;                               
 				top: 0;
 				width: 275px;
 				z-index: 10002;
@@ -2545,7 +2570,7 @@ width: 105px;
 				-moz-transform: translateX(275px);
 				-webkit-transform: translateX(275px);
 				-ms-transform: translateX(275px);
-				transform: translateX(275px);
+				transform: translateX(275px);                               
 			}
 
 			body.navPanel-visible #titleBar {
@@ -2604,7 +2629,7 @@ width: 105px;
 
 		/* Nav */
 
-			#nav {
+			#nav, #top {
 				display: none;
 			}
 
@@ -2670,7 +2695,7 @@ width: 105px;
 
 			#copyright {
 				margin-top: 2em;
-				padding-top: 2em;
+				padding-top: 2em;                                
 			}
                         
                         
