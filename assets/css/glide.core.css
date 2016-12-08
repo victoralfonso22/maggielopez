@@ -65,14 +65,14 @@
           color: #FE1B48;
 }
 .glide--slider .glide__slide {
-  float: left;
-  clear: none;
+  
+  clear: left;
 }
 .glide--carousel.glide--vertical .glide__track {
   overflow: visible;
 }
 .glide--carousel .glide__slide {
-  float: left;
+  float: none;
   clear: none;
 }
 .glide--slideshow .glide__wrapper {
