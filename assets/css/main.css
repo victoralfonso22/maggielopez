@@ -1,5 +1,6 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+@import url(http://allfont.es/allfont.css?fonts=sf-burlington-script-bold);
 
 /*
 	Strongly Typed by HTML5 UP
@@ -1099,6 +1100,7 @@
 		font-weight: 600;
 		text-transform: uppercase;
 		color: black;
+                font-family: 'SF Burlington Script Bold', arial !important;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1394,7 +1396,10 @@
 		input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			background: #f0f0f0;
+			background: #fff;
+                        outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #FE1B48;
 		}
 
 	form textarea {
@@ -1472,6 +1477,12 @@ cursor:pointer;
 color: #Ff0033;
 text-align: center;
 vertical-align: middle;
+transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+
 /*background-image: url('../../imagenes/seca.png') ;*/
 
 }
@@ -1743,6 +1754,7 @@ cursor:pointer;
 			#footer-wrapper form select:focus,
 			#footer-wrapper form textarea:focus {
 				background: #fff;
+                                border: red;
 			}
 
 		#footer-wrapper h2 {
@@ -1797,8 +1809,7 @@ cursor:pointer;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 1000;
-	font-family:  Tahoma, Geneva, sans-serif;
+	z-index: 1000;	
 }                
 #imgM{
     
@@ -1836,7 +1847,7 @@ width: 105px;
 			text-transform: uppercase;
 			font-weight: 300;
 			color: black;
-			outline: 0;                        
+			outline: 0;                           
                         
 		}
 
@@ -1864,6 +1875,7 @@ width: 105px;
 				-o-transition: color 0.25s ease-in-out;
 				-ms-transition: color 0.25s ease-in-out;
 				transition: color 0.25s ease-in-out;
+                                
 			}
 
 		#nav > ul > li.active > a:before, #nav > ul > li:hover > a:before {
