@@ -19,7 +19,7 @@ html,body
     padding: 0px;
     margin: 0px;
     text-align: center;
-	position: fixed;
+	position: absolute;
 	z-index: 99999;
 	overflow-y: auto;
 	width: 100%;
@@ -60,7 +60,7 @@ body.ja_blur > *:not(.ja_wrap)
 */
 .jAlert
 {   
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: 'SF Burlington Script Bold', arial !important;
     text-align: left;
     word-wrap: break-word;
 	background: white;

@@ -2,16 +2,12 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
 @import url(http://allfont.es/allfont.css?fonts=sf-burlington-script-bold);
 
-/*
-	Strongly Typed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-		margin-top: 0 !important;
+		margin: 0 ;
 		padding: 0;
 		border: 0;
 		font-size: 100%;
@@ -428,7 +424,7 @@
 	@media screen and (min-width: 737px) {
 
 		.row > * {
-			padding: 0 0 0 50px;
+			padding: 50px 0 0 50px;
 		}
 
 		.row {
@@ -1729,7 +1725,19 @@ cursor:pointer;
 		background: #fff;
                 height: 650px;
                 border-bottom: solid 1px #000;
-		box-shadow: 0px 4px 4px #FE1B48;              
+                -webkit-box-shadow:0px 4px 4px #FE1B48;
+ -moz-box-shadow:0px 4px 4px #FE1B48;
+ box-shadow:0px 4px 4px #FE1B48;
+            
+	}
+        
+        #mainSub-wrapper {
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+                height: 650px;
+                border-bottom: solid 1px #000;
+		box-shadow: 0px 4px 4px #FE1B48 ,-2px -15px 10px -10px #FE1B48;              
 	}
 
 	#footer-wrapper {
@@ -1759,6 +1767,7 @@ cursor:pointer;
 
 		#footer-wrapper h2 {
 			text-align: center;
+                        margin-top: 0px;
 		}
 
 /* Header */
@@ -2038,7 +2047,11 @@ width: 105px;
 			#main-wrapper {
 				padding: 6em 0 6em 0;
 			}
-
+                        
+                        #mainSub-wrapper {
+				padding: 6em 0 6em 0;
+			}
+                        
 			#footer-wrapper {
 				padding: 6em 0 8em 0;
 			}
@@ -2281,6 +2294,10 @@ width: 105px;
 			#main-wrapper {
 				padding: 4em 0 4em 0;
 			}
+                        
+                        #mainSub-wrapper {
+				padding: 4em 0 4em 0;
+			}
 
 			#footer-wrapper {
 				padding: 4em 0 6em 0;
@@ -2358,6 +2375,7 @@ width: 105px;
 				letter-spacing: 2px;
 				text-align: center;
 				margin: 0 0 1.5em 0;
+                                color: #FE1B48;
 			}
 
 				h2 br, h3 br, h4 br, h5 br, h6 br {
@@ -2642,6 +2660,10 @@ width: 105px;
 			#main-wrapper {
 				padding: 3em 20px 3em 20px;
 			}
+                        
+                        #mainSub-wrapper {
+				padding: 3em 20px 3em 20px;
+			}
 
 			#footer-wrapper {
 				padding: 4em 20px 3em 20px;
@@ -2660,6 +2682,7 @@ width: 105px;
 					font-size: 2em;
 					letter-spacing: 8px;
 					line-height: 1.25em;
+                                        color: #FE1B48;
 				}
 
 				#header p {

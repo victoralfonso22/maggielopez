@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Strongly Typed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Maggie López</title>
@@ -29,7 +25,7 @@
         
         <body id="inicio" class="homepage">
             <div id="inicio"></div>
-            <div style=" margin-top: 95px;"></div>
+            <div style=" margin-top: 0 !important"></div>
 		<div id="page-wrapper">
 
                     
@@ -147,17 +143,17 @@
 					</div>
 				</div>
                             <div><span id="hago" /> </div>
-                            <div id="main-wrapper" >
+                            <div id="mainSub-wrapper" >
                                 <div id="seviciosMobil">
 					<div id="main" class="container">
                                             		<!-- Content -->
 								<div id="content" class="8u 12u(mobile)">
                                                                             <h2>Mis servicios</h2>
                                                                             <table >
-                                                                                <tr class="spacMobil"><td class="spactd"><image src="imagenes/tije.png"/> Corte</td><td class="spactd"><image src="imagenes/lip.png"/> Maquillaje</td></tr>                                                                                
-                                                                                <tr class="spacMobil"><td class="spactd"><image src="imagenes/seca.png"/> Peinado</td><td class="spactd"><image src="imagenes/piess.png"/> Pedicure</td></tr>                                                                                
-                                                                                <tr class="spacMobil"><td class="spactd"><image src="imagenes/polishs.png"/> Polish</td><td class="spactd"><image src="imagenes/unas.png"/> Uñas acrilicas</td></tr>                                                                                
-                                                                                <tr class="spacMobil"><td class="spactd"><image src="imagenes/paleta.png"/> Diseño de color</td><td class="spactd"><image src="imagenes/hair.png"/> Keratina</td></tr>
+                                                                                <tr class="spacMobil"><td onclick="abreDetalle('corte');" class="spactd"><image src="imagenes/tije.png"/> Corte</td><td onclick="abreDetalle('maquillaje');" class="spactd"><image src="imagenes/lip.png"/> Maquillaje</td></tr>                                                                                
+                                                                                <tr class="spacMobil"><td onclick="abreDetalle('peinado');" class="spactd"><image src="imagenes/seca.png"/> Peinado</td><td onclick="abreDetalle('pedicure');" class="spactd"><image src="imagenes/piess.png"/> Pedicure</td></tr>                                                                                
+                                                                                <tr class="spacMobil"><td onclick="abreDetalle('polish');" class="spactd"><image src="imagenes/polishs.png"/> Polish</td><td onclick="abreDetalle('unas');" class="spactd"><image src="imagenes/unas.png"/> Uñas acrilicas</td></tr>                                                                                
+                                                                                <tr class="spacMobil"><td onclick="abreDetalle('color');" class="spactd"><image src="imagenes/paleta.png"/> Diseño de color</td><td onclick="abreDetalle('keratina');" class="spactd"><image src="imagenes/hair.png"/> Keratina</td></tr>
                                                                             </table>
 								</div>
 
@@ -170,9 +166,9 @@
 								<div id="content" class="8u 12u(mobile)">
                                                                             <h2>Mis servicios</h2>
                                                                             <table >
-                                                                                <tr class="spac"><td class="spactd"><image src="imagenes/tije.png"/> Corte</td><td class="spactd"><image src="imagenes/lip.png"/> Maquillaje</td><td class="spactd"><image src="imagenes/seca.png"/> Peinado</td><td class="spactd"><image src="imagenes/piess.png"/> Pedicure</td></tr>                                                                                
+                                                                                <tr class="spac"><td onclick="abreDetalle('corte');" class="spactd"><image src="imagenes/tije.png"/> Corte</td><td onclick="abreDetalle('maquillaje');" class="spactd"><image src="imagenes/lip.png"/> Maquillaje</td><td onclick="abreDetalle('peinado');" class="spactd"><image src="imagenes/seca.png"/> Peinado</td><td onclick="abreDetalle('pedicure');" class="spactd"><image src="imagenes/piess.png"/> Pedicure</td></tr>                                                                                
                                                                                                                                                
-                                                                                <tr class="spac"><td class="spactd"><image src="imagenes/polishs.png"/> Polish</td><td class="spactd"><image src="imagenes/unas.png"/> Uñas acrilicas</td><td class="spactd"><image src="imagenes/paleta.png"/> Diseño de color</td><td class="spactd"><image src="imagenes/hair.png"/> Keratina</td></tr>  
+                                                                                <tr class="spac"><td onclick="abreDetalle('polish');" class="spactd"><image src="imagenes/polishs.png"/> Polish</td><td onclick="abreDetalle('unas');" class="spactd"><image src="imagenes/unas.png"/> Uñas acrilicas</td><td onclick="abreDetalle('color');" class="spactd"><image src="imagenes/paleta.png"/> Diseño de color</td><td onclick="abreDetalle('keratina');" class="spactd"><image src="imagenes/hair.png"/> Keratina</td></tr>  
                                                                                 
                                                                             </table>
 								</div>
@@ -217,7 +213,7 @@
 								<section>
                                                                     <p style="color:#FE1B48"><b>Además me puedes encontrar en...</b></p>
 									<div class="row">
-										
+										<div class="6u 12u(mobile)">
 											<ul class="icons">												
 												<li class="icon fa-phone">
                                                                                                     <a>(296) 109-6331</a>
@@ -236,7 +232,7 @@
                                                                                                     <a href="https://www.facebook.com/Sal%C3%B3n-de-belleza-Maggie-359191150917562/?hc_ref=SEARCH&fref=nf" target="_blank"><span>Salón de belleza Maggie</span></a>
                                                                                                 </li>
                                                                                                 </ul>
-										
+                                                                                </div>
 									</div>
 								</section>
 							</div>
@@ -301,6 +297,8 @@
         type: "slideshow"
         
     });
+    
+    	$('.jAlert').jAlert().centerAlert();
                         </script>
                         
 	</body>

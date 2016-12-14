@@ -43,7 +43,7 @@ function validaCorreo(){
     }else if(nombre.length < 4 ){
        errorAlert('Error',"El nombre debe tener al menos 4 letras"); 
     }else if (!expr.test(correo)){
-       errorAlert('Error',"La dirección de correo " + correo + " es incorrecta.");
+       errorAlert('Error',"La dirección de correo <b>" + correo + "</b> es incorrecta.");
     }else if(nombre!='' && correo != "" && mensaje == ""){
         errorAlert('Error',"No puede quedar en blanco : mensaje.");        
     }else if(nombre=='' && correo == "" && mensaje != ""){
@@ -101,3 +101,92 @@ function soloLetras(e){
             return false;
         }
     }
+
+
+function abreDetalle(tipo){
+    
+    if (tipo == 'corte'){
+        $.jAlert({ 
+            'title' : 'Corte',
+    'ajax': 'servicios/corte.php',
+    'size' : 'auto',
+    'theme' : 'red',    
+    'showAnimation' : 'fadeInLeft',
+    'noPadContent' : true  
+    
+  });
+    }else if(tipo == 'maquillaje'){
+        $.jAlert({ 
+            'title' : 'Maquillaje',
+    'ajax': 'servicios/maquillaje.php',
+    'size' : 'auto',
+    'theme' : 'red',    
+    'showAnimation' : 'fadeInLeft',
+    'noPadContent' : true  
+    
+  });
+}else if(tipo == 'peinado'){
+        $.jAlert({ 
+            'title' : 'Peinado',
+    'ajax': 'servicios/peinado.php',
+    'size' : 'auto',
+    'theme' : 'red',    
+    'showAnimation' : 'fadeInLeft',
+    'noPadContent' : true  
+    
+  });
+}else if(tipo == 'pedicure'){
+        $.jAlert({ 
+            'title' : 'Pedicure',
+    'ajax': 'servicios/pedicure.php',
+    'size' : 'auto',
+    'theme' : 'red',    
+    'showAnimation' : 'fadeInLeft',
+    'noPadContent' : true  
+    
+  });
+}
+else if(tipo == 'polish'){
+        $.jAlert({ 
+            'title' : 'Polish',
+    'ajax': 'servicios/polish.php',
+    'size' : 'auto',
+    'theme' : 'red',    
+    'showAnimation' : 'fadeInLeft',
+    'noPadContent' : true  
+    
+  });
+}
+else if(tipo == 'unas'){
+        $.jAlert({ 
+            'title' : 'Uñas acrílicas',
+    'ajax': 'servicios/unas.php',
+    'size' : 'auto',
+    'theme' : 'red',    
+    'showAnimation' : 'fadeInLeft',
+    'noPadContent' : true  
+    
+  });
+}
+else if(tipo == 'color'){
+        $.jAlert({ 
+            'title' : 'Diseño de color',
+    'ajax': 'servicios/color.php',
+    'size' : 'auto',
+    'theme' : 'red',    
+    'showAnimation' : 'fadeInLeft',
+    'noPadContent' : true  
+    
+  });
+}else if(tipo == 'keratina'){
+        $.jAlert({ 
+            'title' : 'Keratina',
+    'ajax': 'servicios/keratina.php',
+    'size' : 'auto',
+    'theme' : 'red',    
+    'showAnimation' : 'fadeInLeft',
+    'noPadContent' : true  
+    
+  });
+}
+}
