@@ -1069,7 +1069,7 @@
 /* Basic */
 
 	body {
-		background: #f0f0f0;
+		background: #fff;
 		font-family: Tahoma, Geneva, sans-serif;
 		font-weight: 300;
 		color: black;
@@ -1483,6 +1483,24 @@ transform: scale(1.2);
 
 }
 
+.spactdLibro:hover {
+border-radius: 0% 15%; /* Borde redondeado */
+box-shadow: 0px 0px 3px #Ff0033; /* Sombra */
+-moz-transition: all 1s;
+-webkit-transition: all 1s;
+-o-transition: all 1s;
+cursor:pointer;
+color: #Ff0033;
+text-align: center;
+vertical-align: middle;
+-webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+
+/*background-image: url('../../imagenes/seca.png') ;*/
+
+}
+
 		table.default {
 			width: 100%;
 		}
@@ -1528,7 +1546,7 @@ transform: scale(1.2);
 	height: 95px;
 }
 
-#topMobil, #seviciosMobil{
+#topMobil, #seviciosMobil, #libroMovil{
     display: none;
 }
                         
@@ -1675,7 +1693,7 @@ cursor:pointer;
 
 	#header-wrapper {
 		position: relative;
-		background: #fff;
+		background: transparent;
 		text-align: center;
                 vertical-align: middle;
 	}
@@ -1722,8 +1740,8 @@ cursor:pointer;
 	#main-wrapper {
 		position: relative;
 		overflow: hidden;
-		background: #fff;
-                height: 650px;
+		background: transparent;
+                height: 700px;
                 border-bottom: solid 1px #000;
                 -webkit-box-shadow:0px 4px 4px #FE1B48;
  -moz-box-shadow:0px 4px 4px #FE1B48;
@@ -1734,17 +1752,17 @@ cursor:pointer;
         #mainSub-wrapper {
 		position: relative;
 		overflow: hidden;
-		background: #fff;
-                height: 650px;
+		background: transparent;
+                height: 700px;
                 border-bottom: solid 1px #000;
-		box-shadow: 0px 4px 4px #FE1B48 ,-2px -15px 10px -10px #FE1B48;              
+		box-shadow: 0px 4px 4px #FE1B48 ;              
 	}
 
 	#footer-wrapper {
 		position: relative;
 		overflow: hidden;
 		/*border-top: solid 2px #FE1B48;*/
-		background: #f0f0f0;
+		background: #fff;
                 
 	}
 
@@ -1819,7 +1837,89 @@ cursor:pointer;
 	top: 0;
 	width: 100%;
 	z-index: 1000;	
-}                
+}
+
+/* prueba de progressbar en el superion de la pagina*/
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  /* Dimensions */
+  width: 100%;
+  height: .25em;
+
+  /* Reset the apperance */  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+
+  /* For IE10+, color of the progress bar */
+  color: red;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+.flat::-webkit-progress-value {
+  background-color: red;
+}
+
+.flat::-moz-progress-bar {
+  background-color: red;
+}
+
+.single::-webkit-progress-value {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, transparent, red);
+}
+
+.single::-moz-progress-bar {
+  background-color: transparent;
+  background-image: -moz-linear-gradient(left, transparent, red);
+}
+
+.multiple::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, 
+                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                               rgba(0,0, 0, .1) 66%, transparent 66%),
+                      -webkit-linear-gradient(left, green, red);
+}
+
+.multiple::-moz-progress-bar {
+  background-image: -moz-linear-gradient(-45deg, 
+                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                               rgba(0,0, 0, .1) 66%, transparent 66%),
+                      -moz-linear-gradient(left, green, red);
+}
+
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .25em;
+  display: block;
+}
+
+.progress-bar {
+  background-color: red;
+  width: 50%;
+  display: block;
+  height: inherit;
+}
+
+
 #imgM{
     
     width: 100%;
@@ -2360,7 +2460,7 @@ width: 105px;
                             display: inline-block;
                         }
                         
-                        #topMobil, #seviciosMobil{
+                        #topMobil, #seviciosMobil, #libroMovil{
                             display: inline-block;
                         }
 
@@ -2692,7 +2792,7 @@ width: 105px;
 
 		/* Nav */
 
-			#nav, #top, #servicios {
+			#nav, #top, #servicios, #libro {
 				display: none;
 			}
 
