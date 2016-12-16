@@ -41,4 +41,112 @@ $(document).ready(function() {
 			}
 		}
 	});
+        
+        $('.popup-peinado').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Cargando imagen #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">La imagen #%curr%</a> .',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '';
+			}
+		}
+	});
+        
+        $('.popup-pedicure').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Cargando imagen #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">La imagen #%curr%</a> .',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '';
+			}
+		}
+	});
+        
+        $('.popup-polish').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Cargando imagen #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">La imagen #%curr%</a> .',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '';
+			}
+		}
+	});
+        
+        $('.popup-unas').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Cargando imagen #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">La imagen #%curr%</a> .',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '';
+			}
+		}
+	});
+        
+        $('.popup-color').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Cargando imagen #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">La imagen #%curr%</a> .',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '';
+			}
+		}
+	});
+        
+        $('.popup-kera').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Cargando imagen #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">La imagen #%curr%</a> .',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '';
+			}
+		}
+	});
 });

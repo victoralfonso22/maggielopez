@@ -1753,7 +1753,16 @@ cursor:pointer;
 		position: relative;
 		overflow: hidden;
 		background: transparent;
-                height: 700px;
+                height: 800px;
+                border-bottom: solid 1px #000;
+		box-shadow: 0px 4px 4px #FE1B48 ;              
+	}
+        
+        #mainSub1-wrapper {
+		position: relative;
+		overflow: hidden;
+		background: transparent;
+                height: 1900px;
                 border-bottom: solid 1px #000;
 		box-shadow: 0px 4px 4px #FE1B48 ;              
 	}
@@ -2152,6 +2161,10 @@ width: 105px;
 				padding: 6em 0 6em 0;
 			}
                         
+                        #mainSub1-wrapper {
+				padding: 6em 0 6em 0;
+			}
+                        
 			#footer-wrapper {
 				padding: 6em 0 8em 0;
 			}
@@ -2396,6 +2409,10 @@ width: 105px;
 			}
                         
                         #mainSub-wrapper {
+				padding: 4em 0 4em 0;
+			}
+                        
+                        #mainSub1-wrapper {
 				padding: 4em 0 4em 0;
 			}
 
@@ -2762,6 +2779,10 @@ width: 105px;
 			}
                         
                         #mainSub-wrapper {
+				padding: 3em 20px 3em 20px;
+			}
+                        
+                        #mainSub1-wrapper {
 				padding: 3em 20px 3em 20px;
 			}
 
