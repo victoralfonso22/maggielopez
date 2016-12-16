@@ -108,7 +108,7 @@ function abreDetalle(tipo){
     if (tipo == 'corte'){
         $.jAlert({ 
             'title' : 'Corte',
-    'ajax': 'servicios/corte.php',
+    'iframe': 'libroTrabajo/corte.php?tipo=corte',
     'size' : 'auto',
     'theme' : 'red',    
     'showAnimation' : 'fadeInLeft',

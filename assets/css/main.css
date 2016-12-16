@@ -1762,7 +1762,7 @@ cursor:pointer;
 		position: relative;
 		overflow: hidden;
 		/*border-top: solid 2px #FE1B48;*/
-		background: #fff;
+		background: transparent;
                 
 	}
 
@@ -1801,7 +1801,7 @@ cursor:pointer;
 	}
 
 		#header h1 {
-			font-family:  Tahoma, Geneva, sans-serif;
+			font-family:  Tahofont-fama, Geneva, sans-serif;
 			font-weight: 700;
 			color: #E15D4E;
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
@@ -1892,14 +1892,14 @@ progress::-webkit-progress-bar {
   background-image: -webkit-linear-gradient(-45deg, 
                                transparent 33%, rgba(0, 0, 0, .1) 33%, 
                                rgba(0,0, 0, .1) 66%, transparent 66%),
-                      -webkit-linear-gradient(left, green, red);
+                      -webkit-linear-gradient(left, red, red);
 }
 
 .multiple::-moz-progress-bar {
   background-image: -moz-linear-gradient(-45deg, 
                                transparent 33%, rgba(0, 0, 0, .1) 33%, 
                                rgba(0,0, 0, .1) 66%, transparent 66%),
-                      -moz-linear-gradient(left, green, red);
+                      -moz-linear-gradient(left, red, red);
 }
 
 .progress-container {
@@ -2792,7 +2792,7 @@ width: 105px;
 
 		/* Nav */
 
-			#nav, #top, #servicios, #libro {
+			#nav, #top, #servicios {
 				display: none;
 			}
 
