@@ -65,16 +65,12 @@ function validaCorreo(){
             {
                 if(ajax.readyState==4){
                     capa.innerHTML = ajax.responseText;                    
+                
+                errorAlert('Éxito',"Se envió el correo.");                
+            
                 }
             }
-            if(capa == "exito"){
-                
-                successAlert('Éxito',"Se envió el correo.");                
-            }else {
-                
-                errorAlert('Error',"Error al enviar el correo.");          
-                
-            }
+            
             document.getElementById('nombreCorreo').value = '';
                 document.getElementById('emailCorreo').value = '';
                 document.getElementById('mensajeCorreo').value = '';
@@ -108,7 +104,7 @@ function abreDetalle(tipo){
     if (tipo == 'corte'){
         $.jAlert({ 
             'title' : 'Corte',
-    'iframe': 'libroTrabajo/corte.php?tipo=corte',
+    'ajax': 'servicios/corte.php',
     'size' : 'auto',
     'theme' : 'red',    
     'showAnimation' : 'fadeInLeft',

@@ -115,7 +115,7 @@ body.ja_blur > *:not(.ja_wrap)
 
 .ja_close_round, .ja_close_round_white {
     border-radius: 50%;
-    background: #e0e0e0;
+    background: #FE1B48;
     color: #232323;
     padding: 5px 7px;
     right: 10px;
@@ -134,7 +134,7 @@ body.ja_blur > *:not(.ja_wrap)
 .ja_close_alt
 {
     border-radius: 50%;
-    background: #D51C1C;
+    background: #FE1B48;
     color: rgb(255, 255, 255);
     top: -16px;
     right: -18px;
@@ -146,12 +146,12 @@ body.ja_blur > *:not(.ja_wrap)
     background: #d4d4d4;
 }
 .ja_close_alt:hover{
-    background: #DF2020;
+    background: #FE1B48;
 }
 .ja_close_round:hover, .ja_close_round:active
 {
     color: #FFF;
-    background: rgba(0,0,0,.5);
+    background: #FE1B48;
 }
 .ja_close_round_white:hover, .ja_close_round_white:active
 {
@@ -469,7 +469,7 @@ body.ja_blur > *:not(.ja_wrap)
 
 .ja_btn_red:hover
 {
-	background: #D62828;
+	background: #FE1B48;
 }
 
  .ja_btn_red:active

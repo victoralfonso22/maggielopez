@@ -6,12 +6,12 @@
         <div style="height: 450px;" >
         <div>
            
-            <p style="font-family:  Tahoma, Geneva, sans-serif; text-align: justify;"> <img style="float:left;" src="imagenes/caballero.jpg"><b>Esculturales: </b> aplicación de acrílico sobre molde para dar largura a la uña natural.</p>            
+            <p style="font-family:  Tahoma, Geneva, sans-serif; text-align: justify;"><b>Esculturales: </b> aplicación de acrílico sobre molde para dar largura a la uña natural.</p>            
         </div>
         
         <div>
             
-            <p style="font-family:  Tahoma, Geneva, sans-serif; text-align: justify; clear: left; height: auto;"><img style="float:left;" src="imagenes/caballero.jpg"><b style="font-family: Tahoma, Geneva, sans-serif;">Acrimano: </b> encapsulado con acrilico de la uña natural .</p>            
+            <p style="font-family:  Tahoma, Geneva, sans-serif; text-align: justify; clear: left; height: auto;"><b style="font-family: Tahoma, Geneva, sans-serif;">Acrimano: </b> encapsulado con acrilico de la uña natural .</p>            
         </div>  
         </div>
     </body>

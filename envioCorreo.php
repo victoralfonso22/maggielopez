@@ -8,7 +8,7 @@ $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
 //dirección del remitente 
 $headers .= "From: Pagina Web < '".$_POST['correo']."' >\r\n";
 //Enviamos el mensaje a tu_dirección_email 
-$bool = mail("victoralfonso22@gmail.com",$titulo,$mail,$headers);
+$bool = mail("maggie@maggielopez.com.mx",$titulo,$mail,$headers);
 if($bool){
     echo "exito";
 }else{
